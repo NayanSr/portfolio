@@ -23,12 +23,11 @@ body {
 /* Header styles */
 header {
   background-color: #222;
-  padding: 20px 0;
+  padding: 20px 0 40px 0; /* combined padding-top and bottom */
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 999;
-  padding-bottom: 40px;
 }
 
 header .logo {
@@ -37,10 +36,12 @@ header .logo {
   font-weight: bold;
 }
 
+/* Navigation styles */
 nav ul {
   list-style: none;
-  float: right;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 nav ul li {
@@ -183,31 +184,13 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-/* Contact section */
-/* .contact {
-  padding: 60px 0;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
-.contact h2 {
-  margin-bottom: 20px;
-}
-
-.contact p {
-  margin-bottom: 30px;
-  font-size: 18px;
-} */
- /* styles.css */
-
-/* Style for the entire contact section */
+/* Contact section styles */
 .contact-section {
   padding: 50px;
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
 }
 
-/* Style for the heading */
 .contact-section h2 {
   text-align: center;
   font-size: 2em;
@@ -215,7 +198,6 @@ nav ul li a:hover {
   color: #333;
 }
 
-/* Style for the list container */
 .contact-section ul {
   list-style: none;
   max-width: 400px;
@@ -223,14 +205,12 @@ nav ul li a:hover {
   padding: 0;
 }
 
-/* Style for each list item */
 .contact-section li {
   margin: 15px 0;
   font-size: 1.1em;
   color: #555;
 }
 
-/* Style for links */
 .contact-section a {
   color: #0066cc;
   text-decoration: none;
@@ -241,6 +221,7 @@ nav ul li a:hover {
   color: #004999;
 }
 
+/* Form styles */
 form {
   max-width: 600px;
   margin: auto;
